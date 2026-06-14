@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Isaac Lelgo | Technical Portfolio</title>
+    <meta name="description" content="Technical Portfolio of Isaac Lelgo, a Software Engineer and Computer Science graduate specializing in backend architectures, autonomous AI agents, Safaricom Daraja integrations, and Linux kernel optimization.">
+    <meta name="keywords" content="Isaac Lelgo, Software Engineer, Backend Architecture, Python, Django, FastAPI, Linux, Webhook Security, Safaricom Daraja, M-Pesa, BOLA, Security Auditing, Systems Tuning">
+    <meta name="author" content="Isaac Lelgo">
+    
+    <!-- OpenGraph Social Tags -->
+    <meta property="og:title" content="Isaac Lelgo | Technical Portfolio">
+    <meta property="og:description" content="STAR-method case studies on autonomous security agents, financial platforms, telco webhook layers, and Linux systems engineering.">
+    <meta property="og:type" content="website">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Ambient mouse glow spotlight -->
+    <div class="spotlight" id="cursor-spotlight"></div>
+
+    <div class="portfolio-grid">
+        
+        <!-- FIXED SIDEBAR (LEFT) -->
+        <header class="sidebar">
+            <div class="profile-info">
+                <h1 id="sidebar-name">Isaac Lelgo</h1>
+                <h2 id="sidebar-title">Software Engineer</h2>
+                <p id="sidebar-bio">
+                    Computer Science graduate (awaiting graduation). I build resource-optimized backend engines, secure webhook payment systems, and autonomous security agents designed for production-level reliability.
+                </p>
+                
+                <!-- Scroll-Spy Navigation -->
+                <nav class="sidebar-nav" aria-label="Main Navigation">
+                    <a href="#about" class="nav-link active" id="nav-link-about">
+                        <span class="nav-line"></span>
+                        <span class="nav-text">About</span>
+                    </a>
+                    <a href="#projects" class="nav-link" id="nav-link-projects">
+                        <span class="nav-line"></span>
+                        <span class="nav-text">Case Studies</span>
+                    </a>
+                    <a href="#skills" class="nav-link" id="nav-link-skills">
+                        <span class="nav-line"></span>
+                        <span class="nav-text">Skills Matrix</span>
+                    </a>
+                    <a href="#contact" class="nav-link" id="nav-link-contact">
+                        <span class="nav-line"></span>
+                        <span class="nav-text">Contact</span>
+                    </a>
+                </nav>
+            </div>
+            
+            <!-- Social Icons -->
+            <div class="social-links" id="sidebar-socials">
+                <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <i data-lucide="linkedin"></i>
+                </a>
+                <a href="mailto:engineer@example.com" aria-label="Email">
+                    <i data-lucide="mail"></i>
+                </a>
+            </div>
+        </header>
+        
+        <!-- SCROLLABLE CONTENT AREA (RIGHT) -->
+        <main class="content-area">
+            
+            <!-- ABOUT SECTION -->
+            <section id="about" class="content-section">
+                <!-- Mobile section header -->
+                <div class="mobile-section-header">
+                    <h2>About Me</h2>
+                </div>
+                
+                <div class="about-text">
+                    <p>
+                        I am a systems-focused software engineer and a Computer Science graduate (awaiting graduation) with a deep background in <strong>backend architecture, AI orchestration, secure payment flows, and Linux automation</strong>. My engineering philosophy centers on resource optimization, autonomous automation, robust data management, secure integrations, and system-level reliability.
+                    </p>
+                    <p>
+                        My experience ranges from developing state-based AI execution agents that perform autonomous security audits of Web APIs, to optimizing PostgreSQL query layers for mobile applications under heavy database loads. Over years of development, I have integrated production-grade telecommunication callback handlers (Safaricom M-Pesa Daraja API) using robust idempotency models to prevent duplicate payment processing.
+                    </p>
+                    <p>
+                        Additionally, I optimize execution workstations at the OS kernel level, modifying system file handles and networking parameters to sustain high concurrent network fuzzing connections without dropouts. I prioritize writing <strong>zero-trust, resource-conscious code</strong> that maximizes memory efficiency and guarantees system availability.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- PROJECTS SECTION (STAR METHOD) -->
+            <section id="projects" class="content-section">
+                <!-- Mobile section header -->
+                <div class="mobile-section-header">
+                    <h2>Case Studies</h2>
+                </div>
+                
+                <div class="projects-list">
+                    
+                    <!-- Case Study 1: Autopentest -->
+                    <article class="project-card" id="card-autopentest">
+                        <div class="project-card-left">
+                            <span>Security Agent</span>
+                        </div>
+                        <div class="project-card-right">
+                            <h3>
+                                <a href="https://github.com" target="_blank" rel="noopener">
+                                    AI-Assisted Security Auditing Orchestrator ("Autopentest") <i data-lucide="arrow-up-right"></i>
+                                </a>
+                            </h3>
+                            <span class="project-card-role">Lead Engineer – Execution Agent</span>
+                            
+                            <div class="star-details">
+                                <div class="star-point">
+                                    <span class="star-badge">S</span>
+                                    <span class="star-text">
+                                        Traditional fuzzer toolchains execute naive dictionary attacks. They lack reasoning logic and cannot audit complex logical flaws like <strong>BOLA/IDOR</strong> which require authenticated, multi-user state synchronization.
+                                    </span>
+                                </div>
+                                <div class="star-point">
+                                    <span class="star-badge">T</span>
+                                    <span class="star-text">
+                                        Build the L2 Execution Agent responsible for coordinating register/login flows, executing concurrent payload injections, and scanning responses with high reliability and zero manual setup.
+                                    </span>
+                                </div>
+                                <div class="star-point">
+                                    <span class="star-badge">A</span>
+                                    <span class="star-text">
+                                        Designed state orchestration using <strong>LangGraph</strong> for cyclic feedback loops. Built L3 Auth subagents to generate scan-scoped test users dynamically, obtaining OAuth2 JWTs. Implemented an asynchronous client (<code>httpx</code>) with token-bucket rate regulation. Executed concurrent flood tests using <code>asyncio.gather</code> to verify HTTP 429 rate limit triggers (CWE-770), and isolated SQLi error patterns with regex matchers.
+                                    </span>
+                                </div>
+                                <div class="star-point">
+                                    <span class="star-badge">R</span>
+                                    <span class="star-text">
+                                        Reduced manual configurations, achieving a <strong>78% reduction in audit duration</strong>, a <strong>&lt;3% false-positive rate</strong> for logical controls, and automated 100% of proof-of-concept curl generation.
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="tech-badges">
+                                <span class="tech-badge">FastAPI</span>
+                                <span class="tech-badge">LangGraph</span>
+                                <span class="tech-badge">httpx (Async)</span>
+                                <span class="tech-badge">Docker</span>
+                                <span class="tech-badge">CWE-770</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Case Study 2: Halanga -->
+                    <article class="project-card" id="card-halanga">
+                        <div class="project-card-left">
+                            <span>E-Commerce</span>
+                        </div>
+                        <div class="project-card-right">
+                            <h3>
+                                <a href="https://github.com" target="_blank" rel="noopener">
+                                    E-Commerce Platform ("Halanga") <i data-lucide="arrow-up-right"></i>
+                                </a>
+                            </h3>
+                            <span class="project-card-role">Full-Stack Engineer</span>
+                            
+                            <div class="star-details">
+                                <div class="star-point">
+                                    <span class="star-badge">S</span>
+                                    <span class="star-text">
+                                        A high-end carpet retailer required an e-commerce platform capable of loading large, high-resolution product catalogs and handling transaction peaks on budget-restricted serverless backends (Render).
+                                    </span>
+                                </div>
+                                <div class="star-point">
+                                    <span class="star-badge">T</span>
+                                    <span class="star-text">
+                                        Build the full-stack system, optimizing frontend image delivery and backend relational database queries to eliminate memory bottlenecks and high CPU loads.
+                                    </span>
+                                </div>
+                                <div class="star-point">
+                                    <span class="star-badge">A</span>
+                                    <span class="star-text">
+                                        Configured database optimizations in Django ORM by replacing nested loops with <code>.select_related()</code> and <code>.prefetch_related()</code> joins. Designed a React interface on Vercel utilizing optimized WebP formats, CDN caching rules, and secure stateless JWT cookie sessions.
+                                    </span>
+                                </div>
+                                <div class="star-point">
+                                    <span class="star-badge">R</span>
+                                    <span class="star-text">
+                                        Improved load times (LCP) from 4.2s to <strong>1.1 seconds</strong>, cut Django <strong>database CPU consumption by 40%</strong>, and maintained <strong>99.9% uptime</strong> over a 12-month runtime.
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="tech-badges">
+                                <span class="tech-badge">React (Vercel)</span>
+                                <span class="tech-badge">Django REST Framework</span>
+                                <span class="tech-badge">PostgreSQL</span>
+                                <span class="tech-badge">Render</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Case Study 3: Safaricom Webhooks -->
+                    <article class="project-card" id="card-payment">
+                        <div class="project-card-left">
+                            <span>API Integration</span>
+                        </div>
+                        <div class="project-card-right">
+                            <h3>
+                                <a href="https://github.com" target="_blank" rel="noopener">
+                                    Telecommunications & Payment Integration <i data-lucide="arrow-up-right"></i>
+                                </a>
+                            </h3>
+                            <span class="project-card-role">Backend Integration Specialist</span>
+                            
+                            <div class="star-details">
+                                <div class="star-point">
+                                    <span class="star-badge">S</span>
+                                    <span class="star-text">
+                                        Mobile checkouts using Safaricom M-Pesa drop callbacks or send duplicate callback notifications over unreliable network routes, risking double-billing and transaction state discrepancies.
+                                    </span>
+                                </div>
+                                <div class="star-point">
+                                    <span class="star-badge">T</span>
+                                    <span class="star-text">
+                                        Engineer a secure, zero-loss API callback reconciliation layer to process mobile payment events with 100% financial consistency.
+                                    </span>
+                                </div>
+                                <div class="star-point">
+                                    <span class="star-badge">A</span>
+                                    <span class="star-text">
+                                        Built webhook listeners validating Safaricom origin signatures. Developed an idempotency registry in PostgreSQL utilizing row-level database locks (<code>SELECT FOR UPDATE</code>) to prevent race conditions during retry callback bursts. Scheduled asynchronous OAuth2 token lifecycles inside Redis, and built fallback cron systems querying Safaricom status registers.
+                                    </span>
+                                </div>
+                                <div class="star-point">
+                                    <span class="star-badge">R</span>
+                                    <span class="star-text">
+                                        Achieved a <strong>99.98% callback reconciliation rate</strong>, lowered endpoint confirmation latency to <strong>&lt;150ms</strong> via Celery task deferral, and eliminated double-billing instances.
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="tech-badges">
+                                <span class="tech-badge">Safaricom Daraja API</span>
+                                <span class="tech-badge">Django REST Framework</span>
+                                <span class="tech-badge">Celery / Redis</span>
+                                <span class="tech-badge">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Case Study 4: Mobile FinTech -->
+                    <article class="project-card" id="card-financial">
+                        <div class="project-card-left">
+                            <span>Mobile FinTech</span>
+                        </div>
+                        <div class="project-card-right">
+                            <h3>
+                                <a href="https://github.com" target="_blank" rel="noopener">
+                                    Mobile Financial Management App <i data-lucide="arrow-up-right"></i>
+                                </a>
+                            </h3>
+                            <span class="project-card-role">Project Lead & Backend Engineer</span>
+                            
+                            <div class="star-details">
+                                <div class="star-point">
+                                    <span class="star-badge">S</span>
+                                    <span class="star-text">
+                                        Mobile clients query wallet ledger histories, budgets, and balance checks under poor cellular signals, demanding high query consistency and extremely light network envelopes.
+                                    </span>
+                                </div>
+                                <div class="star-point">
+                                    <span class="star-badge">T</span>
+                                    <span class="star-text">
+                                        Design a secure, low-latency transaction API and optimize relational data pipelines to support write-intensive ledgers.
+                                    </span>
+                                </div>
+                                <div class="star-point">
+                                    <span class="star-badge">A</span>
+                                    <span class="star-text">
+                                        Enforced strict double-entry ledger bookkeeping using ACID database transactions. Analyzed database performance using <code>EXPLAIN ANALYZE</code> to add multi-column B-Tree indexes on user search parameters. Implemented Brotli network compression filters and built minimal serialization schemas.
+                                    </span>
+                                </div>
+                                <div class="star-point">
+                                    <span class="star-badge">R</span>
+                                    <span class="star-text">
+                                        Reduced median API latency from 320ms to <strong>45ms</strong>, cut mobile network <strong>payload sizes by 60%</strong>, and verified zero discrepancies across <strong>100,000+ simulated concurrent ledger updates</strong>.
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="tech-badges">
+                                <span class="tech-badge">RESTful APIs</span>
+                                <span class="tech-badge">PostgreSQL</span>
+                                <span class="tech-badge">Brotli / Gzip</span>
+                                <span class="tech-badge">JWT Blacklisting</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Case Study 5: Linux Automation -->
+                    <article class="project-card" id="card-linux">
+                        <div class="project-card-left">
+                            <span>Systems</span>
+                        </div>
+                        <div class="project-card-right">
+                            <h3>
+                                <a href="https://github.com" target="_blank" rel="noopener">
+                                    Linux System Automation & Tuning <i data-lucide="arrow-up-right"></i>
+                                </a>
+                            </h3>
+                            <span class="project-card-role">Systems Engineer</span>
+                            
+                            <div class="star-details">
+                                <div class="star-point">
+                                    <span class="star-badge">S</span>
+                                    <span class="star-text">
+                                        Running intensive fuzzing engines, security scanners, and multi-container sandboxes on development machines caused socket exhaustion, dropped packets, and workspace drift.
+                                    </span>
+                                </div>
+                                <div class="star-point">
+                                    <span class="star-badge">T</span>
+                                    <span class="star-text">
+                                        Automate local environment setups and configure underlying Ubuntu networking stacks to handle aggressive networking tests.
+                                    </span>
+                                </div>
+                                <div class="star-point">
+                                    <span class="star-badge">A</span>
+                                    <span class="star-text">
+                                        Wrote Python resource tracking daemons (run under <code>systemd</code>) that adjust scheduler priorities (<code>renice</code>) dynamically. Configured OS network buffers in <code>/etc/sysctl.conf</code>, increasing open file desc limit (<code>fs.file-max</code>), enabling socket reuse (<code>net.ipv4.tcp_tw_reuse</code>), and raising backlog queues (<code>net.core.somaxconn</code>).
+                                    </span>
+                                </div>
+                                <div class="star-point">
+                                    <span class="star-badge">R</span>
+                                    <span class="star-text">
+                                        Reduced env bootstrap time from 45m to <strong>2 minutes</strong>, supported <strong>2,500 concurrent scanning sockets</strong> without packet losses, and reclaimed <strong>15% idle memory</strong>.
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="tech-badges">
+                                <span class="tech-badge">Bash / Shell</span>
+                                <span class="tech-badge">Python (systemd)</span>
+                                <span class="tech-badge">sysctl.conf Tuning</span>
+                                <span class="tech-badge">Docker Daemon</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+            </section>
+            
+            <!-- SKILLS MATRIX SECTION -->
+            <section id="skills" class="content-section">
+                <!-- Mobile section header -->
+                <div class="mobile-section-header">
+                    <h2>Skills Matrix</h2>
+                </div>
+                
+                <div class="skills-wrapper">
+                    <!-- Languages -->
+                    <div class="skills-category">
+                        <h3>Languages</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag"><i data-lucide="check"></i> Python</span>
+                            <span class="skill-tag"><i data-lucide="check"></i> JavaScript (ES6+)</span>
+                            <span class="skill-tag"><i data-lucide="check"></i> SQL (PostgreSQL)</span>
+                            <span class="skill-tag"><i data-lucide="check"></i> Bash / Shell</span>
+                            <span class="skill-tag"><i data-lucide="check"></i> HTML5 / CSS3</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Frameworks -->
+                    <div class="skills-category">
+                        <h3>Frameworks & Libraries</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag"><i data-lucide="check"></i> Django / DRF</span>
+                            <span class="skill-tag"><i data-lucide="check"></i> FastAPI</span>
+                            <span class="skill-tag"><i data-lucide="check"></i> React.js</span>
+                            <span class="skill-tag"><i data-lucide="check"></i> LangGraph</span>
+                            <span class="skill-tag"><i data-lucide="check"></i> SQLAlchemy</span>
+                            <span class="skill-tag"><i data-lucide="check"></i> Celery / Redis</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Systems & APIs -->
+                    <div class="skills-category">
+                        <h3>Systems, Security & APIs</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag"><i data-lucide="check"></i> Linux / Ubuntu Tuning</span>
+                            <span class="skill-tag"><i data-lucide="check"></i> Docker / Compose</span>
+                            <span class="skill-tag"><i data-lucide="check"></i> Safaricom Daraja API</span>
+                            <span class="skill-tag"><i data-lucide="check"></i> Security Auditing</span>
+                            <span class="skill-tag"><i data-lucide="check"></i> Webhook & OAuth2 Security</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- CONTACT SECTION -->
+            <section id="contact" class="content-section">
+                <!-- Mobile section header -->
+                <div class="mobile-section-header">
+                    <h2>Contact Me</h2>
+                </div>
+                
+                <div class="contact-container">
+                    <div class="contact-header">
+                        <h3>Let's Connect</h3>
+                        <p>
+                            If you are looking to add an engineering candidate focused on performance optimization, API security, and systems engineering to your team, reach out below.
+                        </p>
+                    </div>
+                    
+                    <!-- Clickable Copy Email Card -->
+                    <div class="contact-card-click" onclick="copyToClipboard('engineer@example.com', 'copy-success-tooltip')">
+                        <i data-lucide="mail"></i>
+                        <div>
+                            <span>Recruiter Contact Email</span>
+                            <span>engineer@example.com</span>
+                        </div>
+                        <span class="copy-alert-tooltip" id="copy-success-tooltip">Copied!</span>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="recruiter-name">Your Name</label>
+                            <input type="text" id="recruiter-name" class="form-control" placeholder="Talent Acquisition Specialist" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="recruiter-email">Official Email</label>
+                            <input type="email" id="recruiter-email" class="form-control" placeholder="recruiter@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="recruiter-msg">Details</label>
+                            <textarea id="recruiter-msg" class="form-control" placeholder="Hi, let's schedule a technical evaluation..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-teal" id="form-submit-btn">
+                            Send Message <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+            
+        </main>
+        
+    </div>
+
+    <!-- JavaScript Interactions -->
+    <script src="script.js"></script>
+</body>
+</html>
